@@ -5,7 +5,7 @@ use rand::os::OsRng;
 
 fn main() {
     let plength = 4;
-    let words = include_str!("diceware8k.txt").lines().collect();
+    let words = include_str!("sskj.txt").lines().collect();
     let mut rng = OsRng::new().unwrap();
 
     for _ in 0..plength {
@@ -14,6 +14,5 @@ fn main() {
 }
 
 fn random_word<T: Rng>(rng: &mut T, words: &Vec<&'static str>) -> &'static str {
-    let length = words.len();
     rng.choose(words).unwrap()
 }
