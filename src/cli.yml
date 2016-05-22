@@ -1,0 +1,17 @@
+name: diceware
+version: 0.1.0
+author: Jan Likar <likar.jan@gmail.com>
+about: Password generator
+args:
+    - dictionary:
+        short: d
+        long: dict
+        value_name: FILE
+        help: Sets a custom dictionary file
+        takes_value: true
+    - plength:
+        short: l
+        value_name: NUM
+        help: Generates a password from NUM words
+        takes_value: true
+
